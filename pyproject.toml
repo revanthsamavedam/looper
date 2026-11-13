@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "custom-looper"
+version = "0.1.0"
+description = "A minimal Hermes-architecture agent loop — not a fork, a re-implementation."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+
+[project.scripts]
+looper = "looper.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["looper*"]
